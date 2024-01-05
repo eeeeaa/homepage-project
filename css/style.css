@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto "Courier New", Courier, monospace;
+  color: white;
+  --max-content-size: 800px;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: black;
+}
+
+.header-container {
+  max-width: var(--max-content-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.profile-image {
+  object-fit: cover;
+}
+
+.profile-name {
+  position: absolute;
+  bottom: 0.5em;
+  color: black;
+}
+
+.about-me-section {
+  max-width: 800px;
+  justify-self: flex-start;
+  padding: 1em;
+  background-color: gray;
+}
+
+/*phone*/
+@media (max-width: 699px) {
+  .header-container {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .profile-image {
+    max-width: 350px;
+    min-height: 400px;
+  }
+
+  .about-me-section {
+    min-height: 500px;
+    max-width: 350px;
+  }
+}
+
+/*tablet*/
+@media (min-width: 700px) and (max-width: 800px) {
+}
