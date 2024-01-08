@@ -1,0 +1,56 @@
+{
+  "information": {
+    "profileImage": "./assets/img/stock.webp",
+    "name": "Tantai Layluxsiri",
+    "aboutme": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?",
+    "mygithub": "https://github.com/eeeeaa",
+    "mylinkedin": "https://www.linkedin.com/in/tantai-layluxsiri-0a6367195",
+    "address": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?",
+    "phonenumber": "0123456789",
+    "email": "example@email.com"
+  },
+  "projects": [
+    {
+      "projectImage": "./assets/img/stock.webp",
+      "projectName": "Test",
+      "githubLink": "https://",
+      "otherLink": "https://",
+      "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?"
+    },
+    {
+      "projectImage": "./assets/img/stock.webp",
+      "projectName": "Test",
+      "githubLink": "https://",
+      "otherLink": "https://",
+      "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?"
+    },
+    {
+      "projectImage": "./assets/img/stock.webp",
+      "projectName": "Test",
+      "githubLink": "https://",
+      "otherLink": "https://",
+      "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?"
+    },
+    {
+      "projectImage": "./assets/img/stock.webp",
+      "projectName": "Test",
+      "githubLink": "https://",
+      "otherLink": "https://",
+      "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?"
+    },
+    {
+      "projectImage": "./assets/img/stock.webp",
+      "projectName": "Test",
+      "githubLink": "https://",
+      "otherLink": "https://",
+      "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?"
+    },
+    {
+      "projectImage": "./assets/img/stock.webp",
+      "projectName": "Test",
+      "githubLink": "https://",
+      "otherLink": "https://",
+      "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsa ullam, doloribus dignissimos laborum dolores beatae? Illum voluptates eos corporis? Nihil doloribus aut illo ipsum optio assumenda, eius eos id?"
+    }
+  ]
+}
