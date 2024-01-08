@@ -10,6 +10,11 @@
   --page-margin-tablet: 7%;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -27,6 +32,14 @@ body {
   grid-template: repeat(3, 1fr);
   gap: 1em;
   justify-content: center;
+}
+
+.medium-icon {
+  font-size: large;
+}
+
+.large-icon {
+  font-size: x-large;
 }
 
 .link-section .link-list {
@@ -165,5 +178,10 @@ body {
   }
   .footer-container {
     padding: 1em var(--page-margin-tablet) 1em;
+  }
+
+  .footer-image {
+    max-width: 250px;
+    min-height: 400px;
   }
 }
