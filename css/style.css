@@ -9,13 +9,22 @@
   --page-margin-mobile: 5%;
   --page-margin-tablet: 7%;
 
-  --background-color: linear-gradient(45deg, #020617, #0f172a);
-  --about-me-section-color: #1e293b;
-  --header-text-color: #f8fafc;
-  --description-text-color: #f1f5f9;
-  --about-me-title-color: #f8fafc;
-  --work-section-title-color: #cbd5e1;
-  --work-card-color: #1e293b;
+  --background-color: radial-gradient(
+      ellipse at 10% 90%,
+      #3c2d83 0%,
+      transparent 55%
+    ),
+    radial-gradient(ellipse at 90% 90%, #c33c65 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 10%, #4a74dc 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 10%, #35244f 0%, transparent 55%);
+  --about-me-section-color: #35244f;
+  --header-text-color: #ffb85b;
+  --description-text-color: #fbeaff;
+  --about-me-title-color: #e4f0f5;
+  --work-section-title-color: #e4f0f5;
+  --work-card-color: #35244f;
+  --footer-background-color: #35244f;
+  --info-block-color: #7a3864;
 }
 
 a {
@@ -33,6 +42,7 @@ body {
   flex-direction: column;
   justify-content: center;
   background: var(--background-color);
+  background-blend-mode: screen;
 }
 
 .content {
@@ -40,6 +50,18 @@ body {
   grid-template: repeat(3, 1fr);
   gap: 1em;
   justify-content: center;
+}
+
+.small-icon,
+.medium-icon,
+.large-icon {
+  transition: color 0.2s ease-in-out;
+}
+
+.small-icon:hover,
+.medium-icon:hover,
+.large-icon:hover {
+  color: #ffb85b;
 }
 
 .small-icon {
@@ -143,6 +165,8 @@ body {
 
 .portfolio-title {
   color: var(--work-section-title-color);
+  font-size: xx-large;
+  font-weight: 100;
 }
 
 .work-card {
@@ -153,11 +177,13 @@ body {
   max-width: 300px;
   min-height: 500px;
   gap: 1em;
+  transition: transform 0.2s ease-in-out;
 
   .work-image {
     object-fit: cover;
     max-width: 300px;
     max-height: 300px;
+    border-radius: 0.5em 0.5em 0 0;
   }
 
   .work-name {
@@ -182,9 +208,13 @@ body {
   }
 }
 
+.work-card:hover {
+  transform: scale(1.02);
+}
+
 .footer-container {
   display: flex;
-  background-color: #0f172a;
+  background-color: var(--footer-background-color);
   padding: 1em var(--page-margin) 1em;
   gap: 1em;
   min-width: 100vw;
@@ -200,6 +230,20 @@ body {
 
 .contact-info-title {
   color: var(--header-text-color);
+}
+
+.contact-info-email {
+  display: flex;
+  gap: 0.5em;
+}
+
+.info-block {
+  background-color: var(--info-block-color);
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  color: var(--description-text-color);
+  font-size: medium;
+  font-weight: 200;
 }
 
 /*phone*/

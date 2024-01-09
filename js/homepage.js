@@ -43,7 +43,15 @@ function populateInfoBottomSection(jsonData) {
     phone.style.display = "none";
   }
   if (jsonData.information.email != null) {
-    email.textContent = jsonData.information.email;
+    const icon = document.createElement("img");
+    icon.style.width = "18px";
+    icon.style.height = "18px";
+    icon.src = "./assets/icon/email-outline.svg";
+    icon.alt = "email";
+
+    const text = document.createElement("div");
+    text.textContent = jsonData.information.email;
+    email.append(icon, text);
   } else {
     email.style.display = "none";
   }
