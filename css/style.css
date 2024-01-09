@@ -8,6 +8,14 @@
   --page-margin: 20%;
   --page-margin-mobile: 5%;
   --page-margin-tablet: 7%;
+
+  --background-color: linear-gradient(45deg, #020617, #0f172a);
+  --about-me-section-color: #1e293b;
+  --header-text-color: #f8fafc;
+  --description-text-color: #f1f5f9;
+  --about-me-title-color: #f8fafc;
+  --work-section-title-color: #cbd5e1;
+  --work-card-color: #1e293b;
 }
 
 a {
@@ -24,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: black;
+  background: var(--background-color);
 }
 
 .content {
@@ -76,14 +84,20 @@ body {
   position: relative;
 }
 
-.profile-image {
+.profile-image,
+.footer-image {
   object-fit: cover;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 1em;
 }
 
 .profile-name {
   position: absolute;
   bottom: 0.5em;
-  color: black;
+  color: var(--about-me-title-color);
+  font-size: xx-large;
+  font-weight: 200;
 }
 
 .about-me-section {
@@ -91,16 +105,22 @@ body {
   max-width: 800px;
   min-height: 200px;
   padding: 1em;
-  background-color: gray;
+  background-color: var(--about-me-section-color);
+  border-radius: 0 1em 1em 0;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 0.5em;
+}
+
+.about-me-section .about-me-text {
+  color: var(--header-text-color);
 }
 
 .about-me-section .about-me-description {
   text-align: justify;
+  color: var(--description-text-color);
 }
 
 .about-me-section .link-section {
@@ -121,12 +141,17 @@ body {
   gap: 1em;
 }
 
+.portfolio-title {
+  color: var(--work-section-title-color);
+}
+
 .work-card {
   display: flex;
   flex-direction: column;
-  background-color: #0f172a;
+  background-color: var(--work-card-color);
   border-radius: 0.5em;
   max-width: 300px;
+  min-height: 500px;
   gap: 1em;
 
   .work-image {
@@ -135,16 +160,25 @@ body {
     max-height: 300px;
   }
 
+  .work-name {
+    color: var(--header-text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .work-card-header {
     padding: 0 1em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1em;
   }
 
   .work-description {
     padding: 0 1em 1em;
     text-align: justify;
+    color: var(--description-text-color);
   }
 }
 
@@ -154,12 +188,18 @@ body {
   padding: 1em var(--page-margin) 1em;
   gap: 1em;
   min-width: 100vw;
+  justify-content: space-around;
 }
 
 .contact-info-section {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  color: var(--description-text-color);
+}
+
+.contact-info-title {
+  color: var(--header-text-color);
 }
 
 /*phone*/
@@ -187,7 +227,8 @@ body {
     align-self: center;
   }
 
-  .profile-image {
+  .profile-image,
+  .footer-image {
     max-width: 350px;
     min-height: 400px;
   }
@@ -196,6 +237,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     width: 350px;
+    border-radius: 1em;
   }
 
   .about-me-section .link-section {
