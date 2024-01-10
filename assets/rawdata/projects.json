@@ -19,21 +19,21 @@
     },
     {
       "projectImage": "https://avatars.githubusercontent.com/u/44923556?v=4",
-      "projectName": "Music player and streaming App",
+      "projectName": "Music player App",
       "githubLink": "https://github.com/eeeeaa/MusicProject",
       "otherLink": null,
-      "projectDescription": "Music streaming app project with custom flask server (no longer working)"
+      "projectDescription": "Music streaming app project for android platform with custom flask server (no longer support)"
     },
     {
       "projectImage": "https://avatars.githubusercontent.com/u/44923556?v=4",
       "projectName": "Fog Farm web app",
       "githubLink": "https://github.com/eeeeaa/fogfarms-client",
       "otherLink": null,
-      "projectDescription": "A react JS prototype frontend for a fog farm web application project that allows user to control IoT devices connected to self-contain glass farm."
+      "projectDescription": "A react JS prototype frontend for a fog farm web application project. the goal of the project is to allows user to control IoT devices connected to in-door hydroponic farm."
     },
     {
       "projectImage": "https://avatars.githubusercontent.com/u/44923556?v=4",
-      "projectName": "PM2.5 android app",
+      "projectName": "PM2.5 App",
       "githubLink": "https://github.com/eeeeaa/SeniorProjectApplication",
       "otherLink": null,
       "projectDescription": "An android frontend for a PM2.5 ML model web server to predict PM2.5 concentration in Bangkok, Thailand."

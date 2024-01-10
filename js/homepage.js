@@ -1,11 +1,26 @@
 main();
 
 async function main() {
+  showLoading(true);
   const data = await fetch("./assets/rawdata/projects.json");
   const jsonData = await data.json();
   populateInfoTopSection(jsonData);
   populateWorkList(jsonData);
   populateInfoBottomSection(jsonData);
+  showLoading(false);
+  animateWorkList();
+}
+
+function showLoading(isLoading) {
+  const content = document.querySelector(".content");
+  const loadingPage = document.querySelector(".loading-page");
+  if (isLoading) {
+    content.style.display = "none";
+    loadingPage.style.display = "flex";
+  } else {
+    content.style.display = "grid";
+    loadingPage.style.display = "none";
+  }
 }
 
 function populateInfoTopSection(jsonData) {
@@ -44,8 +59,8 @@ function populateInfoBottomSection(jsonData) {
   }
   if (jsonData.information.email != null) {
     const icon = document.createElement("img");
-    icon.style.width = "18px";
-    icon.style.height = "18px";
+    icon.style.width = "36px";
+    icon.style.height = "36px";
     icon.src = "./assets/icon/email-outline.svg";
     icon.alt = "email";
 
@@ -105,6 +120,24 @@ function populateWorkList(jsonData) {
         projectDescription: project.projectDescription,
       })
     );
+  }
+}
+
+function animateWorkList() {
+  const cards = Array.from(
+    document.querySelectorAll(".portfolio-list .work-card")
+  );
+  let count = 0;
+  const delay = 100;
+
+  for (const card of cards) {
+    const finalTimeInMilli = 500 + count * delay;
+
+    card.style.opacity = 0;
+    card.style.animation = `cardFadeIn ${finalTimeInMilli}ms ease-in`;
+    card.style.opacity = 1;
+
+    count++;
   }
 }
 
