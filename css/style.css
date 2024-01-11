@@ -39,10 +39,6 @@ ul {
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background: var(--background-color);
   background-blend-mode: screen;
   background-attachment: fixed;
@@ -102,16 +98,18 @@ body {
 }
 
 .loading-page {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .content {
+  height: 100vh;
   display: none;
-  grid-template: repeat(3, 1fr);
+  flex-direction: column;
   gap: 1em;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .small-icon,

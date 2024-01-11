@@ -18,7 +18,7 @@ function showLoading(isLoading) {
     content.style.display = "none";
     loadingPage.style.display = "flex";
   } else {
-    content.style.display = "grid";
+    content.style.display = "flex";
     loadingPage.style.display = "none";
   }
 }
